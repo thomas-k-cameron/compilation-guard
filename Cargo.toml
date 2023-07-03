@@ -3,5 +3,8 @@ name = "compilation-guard"
 version = "0.1.0"
 edition = "2021"
 
+license = "Apache 2.0"
+description = "Force compilation to fail when certain condition is met"
+
 [lib]
 proc-macro = true
