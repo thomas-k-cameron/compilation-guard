@@ -1,11 +1,5 @@
 use proc_macro::{self, TokenStream};
 
-#[proc_macro_derive(CompilationGuard)]
-pub fn derive(input: TokenStream) -> TokenStream {
-    panic_logic(input);
-    unreachable!();
-}
-
 #[proc_macro_attribute]
 pub fn compilation_guard(input: TokenStream, _: TokenStream) -> TokenStream {
     panic_logic(input);

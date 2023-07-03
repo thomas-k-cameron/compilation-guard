@@ -7,3 +7,6 @@ edition = "2021"
 
 [dependencies]
 compilation-guard = {path = "../../"}
+
+[features]
+enable-macro = []
